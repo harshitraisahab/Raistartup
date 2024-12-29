@@ -47,7 +47,7 @@ function placeOrder() {
     return;
   }
 
-  const phoneNumber = "9540724212"; // Replace with café's WhatsApp number
+  const phoneNumber = "7489459494"; // Replace with café's WhatsApp number
   let message = "Hello, I would like to order:\n\n";
 
   cart.forEach((item, index) => {
@@ -67,3 +67,8 @@ function placeOrder() {
 if (document.getElementById("cart-items")) {
   displayCart();
 }
+
+//burger button
+document.getElementById("burgerButton").addEventListener("click", function () {
+  window.location.href = "burger.html";
+});
